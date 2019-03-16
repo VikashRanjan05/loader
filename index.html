@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loader</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+           background:url(1.jpeg);
+           background-size: cover; 
+            background-repeat: no-repeat;
+        }
+        .loader{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        span{
+            position: relative;
+            color: #fff;
+            font-family: sans-serif;
+            letter-spacing: 20px;
+            font-size: 35px;
+            font-weight: bold;
+            animation: loading 3s linear infinite;
+        }
+        @keyframes loading{
+            0%{
+                filter: blur(0);
+            }
+            40%{
+                filter: blur(20px);
+            }  
+            80%{
+                filter: blur(0);
+            }
+            100%{
+                filter: blur(0);
+            }
+        }
+        span:nth-child(1){
+            animation-delay: 0s;
+        }
+        span:nth-child(2){
+            animation-delay: 0.1s;
+        }
+        span:nth-child(3){
+            animation-delay: 0.2s;
+        }
+        span:nth-child(4){
+            animation-delay: 0.3s;
+        }
+        span:nth-child(5){
+            animation-delay: 0.4s;
+        }
+        span:nth-child(6){
+            animation-delay: 0.5s;
+        }
+        span:nth-child(7){
+            animation-delay: 0.6s;
+        }
+         span:nth-child(8){
+            animation-delay: 0.6s;
+        }
+        .cover{
+            height: 100%;
+            width: 100%;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            opacity:0.9; 
+
+        }
+    </style>
+</head>
+<body>
+        <div class="cover">
+           
+        </div>
+        <div class="loader">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        
+        
+    </div>
+</body>
+</html>
